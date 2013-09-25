@@ -1,14 +1,14 @@
 %define upstream_name    List-AllUtils
-%define upstream_version 0.03
+%define upstream_version 0.04
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.03
+Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Combines List::Util and List::MoreUtils in one bite-sized package
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/List/List-AllUtils-0.03.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/List/List-AllUtils-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(List::MoreUtils)
@@ -53,4 +53,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Mon Aug 23 2010 cpan2dist 0.02-1mdv
 - initial mdv release, generated with cpan2dist
+
 
