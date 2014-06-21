@@ -6,6 +6,7 @@ Release:	1
 
 Summary:	Combines List::Util and List::MoreUtils in one bite-sized package
 
+
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
@@ -42,5 +43,6 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc META.yml Changes README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
+
 
 
