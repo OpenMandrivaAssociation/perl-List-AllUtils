@@ -1,8 +1,8 @@
 %define upstream_name    List-AllUtils
-%define upstream_version 0.08
+%define upstream_version 0.12
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	8
+Release:	1
 
 Summary:	Combines List::Util and List::MoreUtils in one bite-sized package
 
@@ -12,7 +12,7 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/List/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
-BuildRequires: perl(Test::Warnings)
+BuildRequires:	perl(Test::Warnings)
 BuildRequires:	perl(List::MoreUtils)
 BuildRequires:	perl(List::Util)
 BuildRequires:	perl(Test::More)
@@ -42,5 +42,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc META.yml Changes README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-
