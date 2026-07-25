@@ -1,15 +1,15 @@
 %define upstream_name    List-AllUtils
-%define upstream_version 0.14
+%define upstream_version 0.19
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Combines List::Util and List::MoreUtils in one bite-sized package
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/List/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/houseabsolute/List-AllUtils
+Source0:	https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/List-AllUtils-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
