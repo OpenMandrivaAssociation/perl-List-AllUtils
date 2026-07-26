@@ -1,15 +1,14 @@
 %define upstream_name    List-AllUtils
-%define upstream_version 0.19
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.19
+Release:	2
 
 Summary:	Combines List::Util and List::MoreUtils in one bite-sized package
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/houseabsolute/List-AllUtils
-Source0:	https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/List-AllUtils-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/List-AllUtils-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -27,7 +26,7 @@ remember. This module will export all of the functions that either of those
 two modules defines.
 
 %prep
-%autosetup -p1 -n %{upstream_name}-%{upstream_version}
+%autosetup -p1 -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
